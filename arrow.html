@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>java script arrow functiion</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="sqr"></p>
+        <script>
+            var hello;
+            hello = () => "hello world";
+            document.getElementById("demo").innerHTML=hello();
+            const square = (x) => x*x;
+            document.getElementById("demo1").innerHTML=square(10);
+            var points = (multiplier,bonus) => {
+                var score = multiplier * 10;
+                score*=(1+bonus);
+                return score;
+            };
+            document.write(points(3,2));
+            var greatest=(x,y) => { if(x>y){return x;}else {return y;}};
+            a=parseInt(prompt("enter first number"));
+            b=parseInt(prompt("enter second no"));
+            document.write("<br>"+"the greatest of 2 nos is"+greatest(a,b));
+        </script>
+    </body>
+</html>
